@@ -1,0 +1,129 @@
+.footer{
+    position: relative;
+    z-index: 20;
+    bottom: -180px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+    background-color: #fdf1ef;
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.footer_links{
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    padding-top: 30px;
+}
+
+.footer_links p{
+    text-decoration: underline;
+    text-decoration-color: black;
+    padding-bottom: 10px;
+}
+
+.footer_links_link p{
+    text-decoration: none;
+    padding-bottom: 0px;
+    
+}
+
+.footer_links_link a:link,
+.footer_links_link a:visited,
+.footer_links_link a:hover,
+.footer_links_link a:active{
+    text-decoration: none;
+    color: black;
+}
+
+.footer_links_link a:hover{
+    opacity: 0.5;
+    transition: opacity 0.15s;
+}
+
+.footer_mitte{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: fit-content;
+    height: 150px;
+    padding-top: 30px;
+}
+
+.footer_mitte_kontaktdaten{
+    padding-top: 20px;
+    padding-left: 135px;
+}
+
+.footer_rechts{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 300px;
+    height: 150px;
+    padding-top: 30px;
+}
+
+.footer_rechts_daten{
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+@media(max-width:320px){
+    .footer p{
+            font-size: 12px;
+    }
+}
+
+@media(max-width: 880px){   
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .footer_links{
+        display: flex;
+        align-items: center;
+        height: 150px;
+        padding-top: 30px;
+    }
+
+    .footer_mitte{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 150px;
+        padding-top: 30px;
+    }
+
+    .footer_mitte_kontaktdaten{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+        padding-left: 0;
+    }
+
+    .footer_rechts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 150px;
+        padding-top: 50px;
+    }
+
+    .footer_rechts_daten{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-bottom: 20px;
+    }
+}

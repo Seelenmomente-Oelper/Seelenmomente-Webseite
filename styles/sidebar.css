@@ -1,0 +1,50 @@
+.angebot_sidebar{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    top: 151px;
+    width: 300px;
+    background-color: white;
+}
+
+.sidebar_ueberschrift p{
+    margin-top: 10px;
+    padding-left: 10px;
+    font-size: 20px;
+    padding-bottom: 30px;
+    color: #ff8383;
+}
+
+.container_sidebar_link{
+    padding-left: 10px;
+    padding-bottom: 15px;
+}
+
+.container_sidebar_link a:link,
+.container_sidebar_link a:visited,
+.container_sidebar_link a:hover,
+.container_sidebar_link a:active{
+    text-decoration: none;
+    color: black;
+}
+
+.container_sidebar_link a:hover{
+    opacity: 0.7;
+    transition: opacity 0.15s;
+}
+
+.container_sidebar_link p{
+    display: inline;
+}
+
+@media (max-width: 1180px) {
+    .angebot_sidebar{
+        display: none;
+    }
+    .sidebar_ueberschrift{
+        display: none;
+    }
+    .container_sidebar_link{
+        display: none;
+    }
+}

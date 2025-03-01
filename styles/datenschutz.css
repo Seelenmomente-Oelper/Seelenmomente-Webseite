@@ -1,0 +1,15 @@
+h1{
+    font-family: 'garet-book', Arial, sans-serif;
+    color: #ff8383;
+}
+
+h2{
+    font-family: 'garet-book', Arial, sans-serif;
+    color: #ff8383;
+}
+
+main{
+    margin-left: 20px;
+    text-align: justify;
+    max-width: 780px;
+}

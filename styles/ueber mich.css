@@ -1,0 +1,107 @@
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.info_container{
+    display: flex;
+    flex-direction: row;
+}
+
+.picture_container{
+    width: 400px;
+    height: 600px;
+}
+
+.picture_container img{
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+    object-position: 30%;
+}
+
+.info_all{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.info_textbox{
+    margin-left: 20px;
+    max-width: 1100px;
+}
+
+.info_short{
+    height: 200px;
+}
+
+.headline_infobox{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #ff8383;
+}
+
+.text_infobox{
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.certificates{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.certificates div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 400px;
+}
+
+.certificates p{
+    color: #ff8383;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.certificates a{
+    height: 100%;
+    width: 40%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.download_link{
+    width: 100%;
+    height: 100%;
+    object-fit:scale-down;
+}
+
+@media (max-width: 1000px) {
+    .info_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .certificates{
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .certificates div{
+        margin-bottom: 80px;
+    }
+    .picture_container{
+        align-items: center;
+        width: 100%;
+        height: 600px;
+    }
+    .picture_container img{
+        object-fit:contain;
+        object-position: 50%;
+    }
+}
